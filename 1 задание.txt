@@ -1,0 +1,133 @@
+Инкапсуляция - это скрытие методов и данных(переменных) в один объект. С помощью инкапсуляции скрывается реализация класса, и делает взаимодействие более понятным. Ключевую роль в инкапсуляции играют модификаторы доступа
+Пример:
+public class Person
+{
+	private string _firstName;
+	private string _lastName;
+	private int _age
+	
+	public Person(string firstName, string lastName, int age)
+    	{
+        	_firstName = firstName;
+        	_lastName = lastName;
+        	_age = age;
+    	}
+
+	public string FirstName
+    	{
+        	get { return _firstName; }
+        	set { _firstName = value; }
+    	}
+
+    	public string LastName
+    	{
+        	get { return _lastName; }
+        	set { _lastName = value; }
+    	}
+
+    	public int Age
+    	{
+        	get { return _age; }
+        	set { 
+            		if (value < 0)
+                		throw new ArgumentException("Возраст не может быть отрицательным.");
+            		_age = value; 
+        	    }
+   	}
+ 
+    	public string GetFullName()
+    	{
+        	return $"{_firstName} {_lastName}";
+    	}
+}
+
+Наследование - это создание нового класса на основе уже существующего, который унаследует его свойства и методы, при этом можно вносить новые свойства и методы
+Пример:
+public class Car
+{
+    public string Brand { get; set; }
+    public string Model { get; set; }
+    public int Year { get; set; }
+    public string Color { get; set; }
+
+    public Car(string brand, string model, int year, string color)
+    {
+        Brand = brand;
+        Model = model;
+        Year = year;
+        Color = color;
+    }
+
+    public virtual void StartEngine() 
+    {
+        Console.WriteLine("Двигатель заведен.");
+    }
+
+    public virtual void Drive()
+    {
+        Console.WriteLine("Машина едет.");
+    }
+}
+
+// Дочерний класс SportCar, наследующий от Car
+public class SportCar : Car
+{
+    public int Horsepower { get; set; }
+
+    public SportCar(string brand, string model, int year, string color, int horsepower) : base(brand, model, year, color)
+    {
+        Horsepower = horsepower;
+    }
+
+}
+
+// Дочерний класс ElectricCar, наследующий от Car
+public class ElectricCar : Car
+{
+    public int BatteryCapacity { get; set; }
+
+    public ElectricCar(string brand, string model, int year, string color, int batteryCapacity) : base(brand, model, year, color)
+    {
+        BatteryCapacity = batteryCapacity;
+    }
+
+    public override void StartEngine()
+    {
+        Console.WriteLine("Электрический двигатель активирован.");
+    }
+}
+
+Полиморфизм - это свойство, благодаря которому возможно использование одного и того же метода в разных классах, но при этом действия этих методов могут быть различны. Полиморфизм реализуется с помощью ключевого слова override(перегрузка) в дочерних классах, а также в базовых классах(шаблонах) используют ключевое слово virtual или abstract(без них невозможно переопределить метод, только если в этом методе будут новые входные данные)
+Пример:
+public absctract class Animal
+{
+	public absctract void Voice();
+}
+
+public class Dog : Animal
+{
+	public override void Voice()
+	{
+		Console.WritLine("Гав");
+	}
+}
+
+или
+
+public class Animal
+{
+	public virtual void Voice()
+	{
+		Console.WritLine("Звук животного");
+	}
+}
+
+public class Cat : Animal
+{
+	public override void Voice()
+	{
+		Console.WritLine("Мяу");
+	}
+}
+
+ 
