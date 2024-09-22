@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\AT-WORK\AT-WORK\bin\Debug\net8.0\AT-WORK.exe
+C:\Users\User\source\repos\AT-WORK\AT-WORK\bin\Debug\net8.0\AT-WORK.deps.json
+C:\Users\User\source\repos\AT-WORK\AT-WORK\bin\Debug\net8.0\AT-WORK.runtimeconfig.json
+C:\Users\User\source\repos\AT-WORK\AT-WORK\bin\Debug\net8.0\AT-WORK.dll
+C:\Users\User\source\repos\AT-WORK\AT-WORK\bin\Debug\net8.0\AT-WORK.pdb
+C:\Users\User\source\repos\AT-WORK\AT-WORK\obj\Debug\net8.0\AT-WORK.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\AT-WORK\AT-WORK\obj\Debug\net8.0\AT-WORK.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\AT-WORK\AT-WORK\obj\Debug\net8.0\AT-WORK.AssemblyInfo.cs
+C:\Users\User\source\repos\AT-WORK\AT-WORK\obj\Debug\net8.0\AT-WORK.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\AT-WORK\AT-WORK\obj\Debug\net8.0\AT-WORK.dll
+C:\Users\User\source\repos\AT-WORK\AT-WORK\obj\Debug\net8.0\refint\AT-WORK.dll
+C:\Users\User\source\repos\AT-WORK\AT-WORK\obj\Debug\net8.0\AT-WORK.pdb
+C:\Users\User\source\repos\AT-WORK\AT-WORK\obj\Debug\net8.0\AT-WORK.genruntimeconfig.cache
+C:\Users\User\source\repos\AT-WORK\AT-WORK\obj\Debug\net8.0\ref\AT-WORK.dll
